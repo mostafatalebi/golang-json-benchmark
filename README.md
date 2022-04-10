@@ -21,3 +21,8 @@ BenchmarkNormalJsonDecoding-8            5799097              6302 ns/op        
 BenchmarkFastJJsonDecoding-8             9503856              4528 ns/op            6368 B/op         32 allocs/op
 
 ```
+
+#### Sample command for running bench
+```shell
+ go test -bench=. -benchmem -benchtime=30s -cpuprofile ../json.bench.out
+```
