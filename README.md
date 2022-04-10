@@ -14,3 +14,10 @@ https://github.com/valyala/fastjson
 Your must write more lines of code, indeed. You have to assign each field declaratively; but who doesn't know that GoLang is not intended to be a language with generic data types and structures? Then avoid doing it. Write declarative code.
 
 Run the benchmark, and it simply shows you the result. It already has been tested on production. 
+
+### Benchmark Result
+```shell 
+BenchmarkNormalJsonDecoding-8            5799097              6302 ns/op             976 B/op         32 allocs/op
+BenchmarkFastJJsonDecoding-8             9503856              4528 ns/op            6368 B/op         32 allocs/op
+
+```
